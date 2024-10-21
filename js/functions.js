@@ -1,4 +1,4 @@
-﻿
+
 var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
@@ -86,7 +86,7 @@ function startHeartAnimation() {
 				if (progress >= str.length) {
 					clearInterval(timer);
 				}
-			}, 75);
+			}, 45);
 		});
 		return this;
 	};
@@ -116,7 +116,7 @@ function timeElapse(date){
 
 function showMessages() {
 	adjustWordsPosition();
-	$('#messages').fadeIn(5000, function() {
+	$('#messages').fadeIn(100, function() {
 		showLoveU();
 	});
 }
@@ -132,5 +132,5 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(3000);
+	$('#loveu').fadeIn(2000);
 }
